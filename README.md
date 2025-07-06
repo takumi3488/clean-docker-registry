@@ -77,7 +77,7 @@ docker build -t registry-cleaner .
 docker run --rm \
   -e REGISTRY_URL="http://localhost:5000" \
   -e KEEP_TAGS="3" \
-  registry-cleaner --dry-run
+  ghcr.io/takumi3488/clean-docker-registry --dry-run
 ```
 
 ##### 実際の削除実行
@@ -86,7 +86,7 @@ docker run --rm \
 docker run --rm \
   -e REGISTRY_URL="http://localhost:5000" \
   -e KEEP_TAGS="3" \
-  registry-cleaner
+  ghcr.io/takumi3488/clean-docker-registry
 ```
 
 #### 環境変数
